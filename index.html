@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML & CSS Cheatsheet</title>
+        <link rel="stylesheet" href="Resources/index.css"/>
+        <link rel="stylesheet" href="html-css-cheatsheet.github.io">
+    </head>
+        <h1>HTML and CSS Elements</h1>
+
+    <body>
+        <h3>Basic Foundation and set up of a HTML File</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Placement</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>&lt;!DOCTYPE html&gt;</td>
+                <td>A declaration that tells the browser what version of HTML the document is written in.</td>
+                <td>First line of a HTML file.</td>
+                <td>&lt;!DOCTYPE html&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;html&gt;</td>
+                <td>Represents the root of the document, often reffered to as the root element.</td>
+                <td>Second line of HTML file, with a closing tag as the last line in the file.</td>
+                <td>&lt;html&gt; &lt;/html&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;head&gt;</td>
+                <td>Contains machine-readable information about the document, such as &lt;title&gt; and stylesheet.</td>
+                <td>Child element of &lt;html&gt;</td>
+                <td>&lt;head&gt; &lt;/head&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;link&gt;</td>
+                <td>Specifies relationships between the current document and an external resource.</td>
+                <td>Can be placed in either the &lt;head&gt; or &lt;body&gt; elements, though the file is more readable and organised if it remains in the former.</td>
+                <td>
+                    &lt;link href="style.css" rel="stylesheet" /&gt;
+                    <br><br>Where 'href' means Hypertext Reference, and 'rel' means Relationship.
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;title&gt;</td>
+                <td>Sets the title of the page, which is the title that appears in the browser tab when the page is loaded in.</td>
+                <td>Placed in the &lt;head&gt; element.</td>
+                <td>&lt;title&gt; &lt;/title&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;body&gt;</td>
+                <td>This contains all of the content displayed on a page.</td>
+                <td>Placed after the closing tag of &lt;head&gt;, with a closing tag as the second last line in the file.</td>
+                <td>&lt;body&gt; &lt;/body&gt;</td>
+            </tr>
+        </table>
+
+        <div>
+
+        <h3>The Basic Elements Found in the &lt;body&gt; Element</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Placement</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>&lt;header&gt;</td>
+                <td>Not to be confused with &lt;head&gt;, &lt;header&gt; represents the introductory content of a page, typically a group of introductory or navigational aids.</td>
+                <td>Child element of &lt;body&gt;</td>
+                <td id="T-Example"> &lt;header&gt;
+                    <br>&emsp; &lt;h1&gt;This is an example.&lt;/h1&gt;
+                    <br>&emsp; &lt;p&gt;And another example.&lt;/p&gt;
+                    <br>
+                &lt;/header&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;nav&gt;</td>
+                <td>Represents a section of a page whose purpose is to provide navigational links, such as menus tables of contents, and indexes.</td>
+                <td>Child element of &lt;body&gt;, and usually comes directly after the &lt;header&gt; element.</td>
+                <td>&lt;nav&gt; &lt;/nav&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; <br> &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</td>
+                <td>Represents six different levels of section headings, with &lt;h1&gt; being the largest and every heading after shrinking in size.</td>
+                <td>Placed in the &lt;body&gt; element, often as the parent element of &lt;p&gt;</td>
+                <td>&lt;h1&gt; &lt;/h1&gt; <br> &lt;h2&gt; &lt;/h2&gt; <br> &lt;h3&gt; &lt;/h3&gt; <br> &lt;h4&gt; &lt;/h4&gt; <br> &lt;h5&gt; &lt;/h5&gt; <br> &lt;h6&gt; &lt;/h6&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;main&gt;</td>
+                <td>Represents the dominant content of the document. The main content area consists of content directly related to or expands upon the central topic of the document.</td>
+                <td>Can often be found as the child element of &lt;header&gt;</td>
+                <td>&lt;main&gt; &lt;/main&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;article&gt;</td>
+                <td>Represents a self-contained composition in a document, page, application, or site. Most often found in forum posts, magazine or newspaper articles, blog entries and so forth.</td>
+                <td>Found in the &lt;body&gt; element, often with a heading element as its child.</td>
+                <td>&lt;article&gt; &lt;/article&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;aside&gt;</td>
+                <td>Represents a portion of the document whose content is only indirectly related to the documents main content. Frequently presented as sidebars or call-out boxes.</td>
+                <td>Often found as a child element of &lt;article&gt;</td>
+                <td id="T-Example"> &lt;aside&gt;
+                    <br>&emsp; &lt;p&gt;This is how it would be placed.&lt;/p&gt;
+                    <br>&lt;/aside&gt;
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;section&gt;</td>
+                <td>Represents a generic stand alone section of the document that doesn't have a more specific element to represent it.</td>
+                <td>Found in the &lt;body&gt; when an element doesn't have a specific parent element present.</td>
+                <td>&lt;section&gt; &lt;/section&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>Defines a division or section in an HTML document to establish a more coherent flow.</td>
+                <td>The tag can be placed anywhere within the &lt;body&gt; element.</td>
+                <td>&lt;div&gt; &lt;/div&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;footer&gt;</td>
+                <td>A footer typically contains information about the author of the page, copyright data, or links to related documents.</td>
+                <td>Typically found at the bottom of the file, before &lt;/body&gt;</td>
+                <td>&lt;footer&gt; &lt;/footer&gt;</td>
+            </tr>
+        </table>
+
+        </div>
+        <div>
+        
+        <h3>The Basic Elements of HTML Text</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Placement</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Represents a paragraph.</td>
+                <td>The tag can be placed anywhere within the &lt;body&gt; element.</td>
+                <td>&lt;p&gt; &lt;/p&gt;
+                <br><br>Though it is possible a closing tag isn't needed, depending on what element proceeds the content of &lt;p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt;</td>
+                <td>Represents an ordered list of items, typically rendered as a numbered list.</td>
+                <td>Placed in the &lt;body&gt; element when needing to make a numbered or ordered list, such as for a recipe.</td>
+                <td id="T-Example"> &lt;ol&gt;
+                    <br>&emsp; &lt;li&gt;This is an example.&lt;/li&gt;
+                    <br>&emsp; &lt;li&gt;And another example.&lt;/li&gt;
+                <br>&lt;/ol&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>Represents an unordered list of items, typically rendered as a bulleted list.</td>
+                <td>Placed in the &lt;body&gt; element when needing to make a list, </td>
+                <td id="T-Example"> &lt;ul&gt;
+                    <br>&emsp; &lt;li&gt;This is an example.&lt;/li&gt;
+                    <br>&emsp; &lt;li&gt;And another example.&lt;/li&gt;
+                <br>&lt;/ul&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>Represents items in a list. Can be either ordered or unordered, meaning numbered or displayed with bullet points, depending on the parent element.</td>
+                <td>A child element of &lt;ol&gt; or &lt;ul&gt;</td>
+                <td id="T-Example"> &lt;ol&gt; or &lt;ul&gt;
+                    <br>&emsp; &lt;li&gt;This is an example.&lt;/li&gt;
+                    <br>&emsp; &lt;li&gt;And another example.&lt;/li&gt;
+                <br>&lt;/ol&gt; or &lt;/ul&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;hr&gt;</td>
+                <td>Represents a thematic break between paragraph-level elements. For example, a change of scene in a story, or a shift of topic within a section.</td>
+                <td>Often placed between two &lt;p&gt; elements.</td>
+                <td>&lt;hr&gt; &lt;/hr&gt;
+                    <br><br>Though, a closing tag is not always necessary.
+                </td>
+            </tr>
+        </table>
+        
+        </div>
+
+    <h3></h3>
+    </body>
+</html>

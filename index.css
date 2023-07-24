@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    font-size: 130px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    font-family: monospace;
+    margin: auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    width: 25%;
+    background-color: darkgrey;
+    font-size: 115%;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 150%;
+}
+
+#T-Example {
+    text-align: left;
+}
